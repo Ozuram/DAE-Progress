@@ -1,0 +1,30 @@
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/bin/Debug/net8.0/demo
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/bin/Debug/net8.0/demo.deps.json
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/bin/Debug/net8.0/demo.runtimeconfig.json
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/bin/Debug/net8.0/demo.dll
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/bin/Debug/net8.0/demo.pdb
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/obj/Debug/net8.0/demo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/obj/Debug/net8.0/demo.AssemblyInfoInputs.cache
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/obj/Debug/net8.0/demo.AssemblyInfo.cs
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/obj/Debug/net8.0/demo.csproj.CoreCompileInputs.cache
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/obj/Debug/net8.0/demo.sourcelink.json
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/obj/Debug/net8.0/demo.dll
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/obj/Debug/net8.0/refint/demo.dll
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/obj/Debug/net8.0/demo.pdb
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/obj/Debug/net8.0/demo.genruntimeconfig.cache
+/Users/sa52/Desktop/DAE-Progress/C# #2/demo/obj/Debug/net8.0/ref/demo.dll
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/obj/Debug/net8.0/demo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/obj/Debug/net8.0/demo.AssemblyInfoInputs.cache
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/obj/Debug/net8.0/demo.AssemblyInfo.cs
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/obj/Debug/net8.0/demo.csproj.CoreCompileInputs.cache
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/obj/Debug/net8.0/demo.sourcelink.json
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/obj/Debug/net8.0/demo.dll
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/obj/Debug/net8.0/refint/demo.dll
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/obj/Debug/net8.0/demo.pdb
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/bin/Debug/net8.0/demo
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/bin/Debug/net8.0/demo.deps.json
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/bin/Debug/net8.0/demo.runtimeconfig.json
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/bin/Debug/net8.0/demo.dll
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/bin/Debug/net8.0/demo.pdb
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/obj/Debug/net8.0/demo.genruntimeconfig.cache
+/Users/sa52/Documents/DAE-Progress/c#_2/demo/obj/Debug/net8.0/ref/demo.dll
