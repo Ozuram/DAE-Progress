@@ -19,12 +19,20 @@ public class GameManager : MonoBehaviour
       
        Instance = this;
    }
+    private int m_FoodAmount = 100;
+    
+    void Start()
+    {
+    TurnManager = new TurnManager();
+    TurnManager.OnTick += OnTurnHappen;
   
-   void Start()
-   {
-       TurnManager = new TurnManager();
-      
-       BoardManager.Init();
-       PlayerController.Spawn(BoardManager, new Vector2Int(1,1));
-   }
+    BoardManager.Init();
+    PlayerController.Spawn(BoardManager, new Vector2Int(1,1));
+    }
+
+    void OnTurnHappen()
+    {
+    m_FoodAmount -= 1;
+    Debug.Log("Current amount of food : " + m_FoodAmount);
+    }
 }
