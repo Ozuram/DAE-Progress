@@ -24,7 +24,7 @@ public class BoardManager : MonoBehaviour
    public int Height;
    public Tile[] GroundTiles;
    public Tile[] BlockingTiles;
-   public CellObject FoodPrefab;
+   public FoodObject FoodPrefab;
    public List<Vector2Int> m_EmptyCellsList;
 
 
@@ -76,14 +76,15 @@ public class BoardManager : MonoBehaviour
         int foodCount = 5;
         for (int i = 0; i < foodCount; ++i)
         {
-            int randomIndex = Random.Range(0, m_EmptyCellsList.Count);
-            Vector2Int coord = m_EmptyCellsList[randomIndex];
-      
-            m_EmptyCellsList.RemoveAt(randomIndex);
-            CellData data = m_BoardData[coord.x, coord.y];
-            CellObject newFood = Instantiate(FoodPrefab);
-            newFood.transform.position = CellToWorld(coord);
-            data.ContainedObject = newFood;
+            int randomX = Random.Range(1, Width-1);
+            int randomY = Random.Range(1, Height-1);
+            CellData data = m_BoardData[randomX, randomY];
+            if (data.Passable && data.ContainedObject == null)
+            {
+                FoodObject newFood = Instantiate(FoodPrefab);
+                newFood.transform.position = CellToWorld(new Vector2Int(randomX, randomY));
+                data.ContainedObject = newFood;
+            }
         }
     }
 
