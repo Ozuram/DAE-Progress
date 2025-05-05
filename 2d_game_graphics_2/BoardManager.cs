@@ -126,4 +126,6 @@ public void Init()
    //remove the starting point of the player! It's not empty, the player is there
    m_EmptyCellsList.Remove(new Vector2Int(1, 1));
    GenerateFood();
+
+   
 }}
