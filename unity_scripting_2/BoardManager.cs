@@ -83,6 +83,7 @@ public class BoardManager : MonoBehaviour
             {
                 FoodObject newFood = Instantiate(FoodPrefab);
                 newFood.transform.position = CellToWorld(new Vector2Int(randomX, randomY));
+                newFood.SetBoardPosition(new Vector2Int(randomX, randomY));
                 data.ContainedObject = newFood;
             }
         }
@@ -126,4 +127,6 @@ public void Init()
    //remove the starting point of the player! It's not empty, the player is there
    m_EmptyCellsList.Remove(new Vector2Int(1, 1));
    GenerateFood();
+
+   
 }}

@@ -83,6 +83,7 @@ public class BoardManager : MonoBehaviour
             {
                 FoodObject newFood = Instantiate(FoodPrefab);
                 newFood.transform.position = CellToWorld(new Vector2Int(randomX, randomY));
+                newFood.SetBoardPosition(new Vector2Int(randomX, randomY));
                 data.ContainedObject = newFood;
             }
         }

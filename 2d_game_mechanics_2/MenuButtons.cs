@@ -1,17 +1,21 @@
 using UnityEngine;
-using System.Collections.Generic;
-using System.Collections;
 
 public class MenuButtons : MonoBehaviour
 {
+    private bool isPaused = false;
 
     public void OnStartGameButtonClicked()
     {
         Debug.Log("Game Start.");
     }
 
-    private bool isPaused = false;
-
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePause();
+        }
+    }
 
     public void TogglePause()
     {
@@ -26,5 +30,4 @@ public class MenuButtons : MonoBehaviour
             Debug.Log("Paused.");
         }
     }
-
 }
