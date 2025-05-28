@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class FoodObject : CellObject
 {
-   public int AmountGranted = 10;
-  
-   public override void PlayerEntered()
+    public int AmountGranted = 10;
+
+    public override void PlayerEntered()
     {
         Debug.Log("✅ PlayerEntered() was called on food!");
 
@@ -23,16 +23,15 @@ public class FoodObject : CellObject
         Destroy(gameObject);
     }
 
-   private Vector2Int m_BoardPosition;
+    private Vector2Int m_BoardPosition;
 
-        public void SetBoardPosition(Vector2Int pos)
-        {
-            m_BoardPosition = pos;
-        }
+    public void SetBoardPosition(Vector2Int pos)
+    {
+        m_BoardPosition = pos;
+    }
 
-        public Vector2Int BoardManagerPosition()
-        {
-            return m_BoardPosition;
-        }
-
+    public Vector2Int BoardManagerPosition()
+    {
+        return m_BoardPosition;
+    }
 }

@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
        bool hasMoved = false;
 
        if (Time.timeScale > 0f) // Only allow movement when game is not paused
-{
+        {
     if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             {
             newCellTarget.y += 1;
