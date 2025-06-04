@@ -5,6 +5,11 @@ public class PlayerController : MonoBehaviour
 {
    private BoardManager m_Board;
    private Vector2Int m_CellPosition;
+    
+    public Vector2Int Cell
+    {
+        get { return m_CellPosition; }
+    }
 
    
 
@@ -61,13 +66,15 @@ public class PlayerController : MonoBehaviour
             {
                 GameManager.Instance.TurnManager.Tick();
 
-    // Handle cell contents *before* moving
+                MoveTo(newCellTarget); // Player moves first
+
+                // Refresh cell data at new position
+                cellData = m_Board.GetCellData(m_CellPosition);
+
                 if (cellData.ContainedObject != null)
                 {
                     cellData.ContainedObject.PlayerEntered();
                 }
-
-                MoveTo(newCellTarget); // Move after
             }
         }
     }

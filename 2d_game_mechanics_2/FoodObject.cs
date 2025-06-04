@@ -2,36 +2,20 @@ using UnityEngine;
 
 public class FoodObject : CellObject
 {
-    public int AmountGranted = 10;
+    public int FoodValue = 10;
 
-    public override void PlayerEntered()
+        public override void PlayerEntered()
     {
-        Debug.Log("✅ PlayerEntered() was called on food!");
+        Debug.Log("PlayerEntered() called on food at: " + m_Cell);
+        GameManager.Instance.ChangeFood(FoodValue);
+        GameManager.Instance.BoardManager.GetCellData(m_Cell).ContainedObject = null;
 
-        BoardManager.CellData cell = GameManager.Instance.BoardManager.GetCellData(BoardManagerPosition());
-        if (cell != null)
-        {
-            Debug.Log("✅ Found board cell, clearing ContainedObject.");
-            cell.ContainedObject = null;
-        }
-        else
-        {
-            Debug.LogWarning("⚠️ Couldn't find the board cell for food!");
-        }
-
-        GameManager.Instance.ChangeFood(AmountGranted);
         Destroy(gameObject);
     }
 
-    private Vector2Int m_BoardPosition;
-
-    public void SetBoardPosition(Vector2Int pos)
+    private void OnDestroy()
     {
-        m_BoardPosition = pos;
+        Debug.Log("FoodObject at " + m_Cell + " was destroyed.");
     }
 
-    public Vector2Int BoardManagerPosition()
-    {
-        return m_BoardPosition;
-    }
 }
